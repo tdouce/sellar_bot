@@ -13,3 +13,4 @@ gem 'lita-slack' # slack adapter
 # For example:
 # gem "lita-google-images"
 gem "lita-karma"
+gem "lita-slack-karma-sync"
