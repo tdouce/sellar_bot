@@ -33,6 +33,10 @@ Lita.configure do |config|
     config.redis.port = ENV.fetch('REDIS_PORT')
   end
 
+  config.handlers.imgflip.command_only = false
+  config.handlers.imgflip.username = ENV['IMGFLIP_USER']
+  config.handlers.imgflip.password = ENV['IMGFLIP_PASSWORD']
+
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
   # config.handlers.some_handler.some_config_key = "value"
